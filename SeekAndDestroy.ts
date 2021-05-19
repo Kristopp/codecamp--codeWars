@@ -3,16 +3,13 @@
 Note: You have to use the arguments object. */
 
 function destroyer(arr, ...args) {
-  let stringArrayArgs = args;
   //Convert arguments into array
-  //find matching values
-  // getIndex and then get ocuring  item by index
-  //use include and indexOf to get indexses of ocuring values
+  let stringArrayArgs = args;
+  //compare argument array with values(values are in array) we want to destroy
   let filterdArray = arr.filter((element) => {
+    //Use call back function on each number to see if it is true or false compared too value in array
     return stringArrayArgs.indexOf(element) === -1;
   });
-  //use filter to destroy items on that index
-
   return filterdArray;
 }
 
