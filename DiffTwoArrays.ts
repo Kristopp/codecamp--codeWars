@@ -8,8 +8,10 @@ function diffArray(arr1, arr2) {
   //compare arr2 to arr1
   //use for loop
   for (let i = 0; i < arr1.length; i++) {
-    //If arr2 item at given index is not equal to arr1 item at index - 1 continue
+    //If item at given posistion is not equal to
     if (arr2.indexOf(arr1[i]) !== -1) {
+      //[1, 2, 3, 5], [1, 2, 3, 4, 5]
+      console.log(arr2.indexOf(arr1[i]));
       continue;
     }
     //else push item at arr1[i]
